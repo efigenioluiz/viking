@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_floki"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FlokiActivity"
+        android:fillViewport="true"
+        android:background="#000">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="Floki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="104dp"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:textSize="40dp"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+        />
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/floki"
+                tools:layout_editor_absoluteY="16dp"
+                tools:layout_editor_absoluteX="33dp"
+                android:id="@+id/imageView"
+                android:layout_gravity="center"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="104dp"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:text="Interpretado brilhantemente por Gustaf Skarsgård, Floki é basicamente um dos personagens mais interessantes da série Vikings. Uma pessoa que luta contra a sua própria personalidade, Floki começa a sua jornada apresentando-se como  um grande construtor de barcos, ajudando Ragnar a explorar as terras do Oeste e produzindo uma nova geração de barcos vikings que levaram-no a conquistar novas terras e espólios.  "/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:textSize="40dp"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:text="Amigos Favoritos"
+                tools:layout_editor_absoluteY="16dp"
+                tools:layout_editor_absoluteX="33dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageButton
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/ragnar"
+                    android:id="@+id/btFlokiR"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:background="#000"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

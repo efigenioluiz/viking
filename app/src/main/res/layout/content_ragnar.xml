@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activityragnar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ScrolActivity"
+        android:fillViewport="true"
+        android:background="#000">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="Ragnar Lodbrok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="104dp"
+                android:id="@+id/textView"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:textSize="40dp"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+        />
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ragnar"
+                tools:layout_editor_absoluteY="16dp"
+                tools:layout_editor_absoluteX="33dp"
+                android:id="@+id/imageView"
+                android:layout_gravity="center"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="104dp"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:text="Ragnar Lodbrok é apresentado pelo cronista dinamarquês Saxão Gramático, no século XIII, como sendo jarl do rei Horik 1. da Dinamarca, embora tendo origem na dinastia sueca dos Inglingos. Tanto Saxão quanto a saga islandesa Saga de Ragnar Lodbrok descrevem Ragnar como filho do igualmente lendário Sigurdo, o Anel, um rei da Suécia que teria conquistado a Dinamarca. Todavia, os cronistas não concordam com o local de residência principal de Ragnar, se a Suécia ou a Dinamarca."/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:textSize="40dp"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:text="Amigos Favoritos"
+                tools:layout_editor_absoluteY="16dp"
+                tools:layout_editor_absoluteX="33dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageButton
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/lagertha"
+                    android:id="@+id/btRagnarL"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+            />
+            <ImageButton
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/bjorn"
+                    android:id="@+id/btRagnarB"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+            />
+            <ImageButton
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/floki"
+                    android:id="@+id/btRagnarF"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
